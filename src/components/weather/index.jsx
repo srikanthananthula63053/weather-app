@@ -62,7 +62,7 @@ function getCurrentDate(){
           <div className="date">
             <span>{getCurrentDate()}</span>
           </div>
-          <div>{weatherData?.main?.temp}</div>
+          <div className="temp">{weatherData?.main?.temp}</div>
           <p className="description">
             {weatherData?weatherData.weather[0]&&weatherData.weather[0].description : ""}
           </p>
